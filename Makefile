@@ -6,20 +6,20 @@
 #    By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/16 15:14:08 by fbelotti          #+#    #+#              #
-#    Updated: 2024/04/17 17:11:38 by fbelotti         ###   ########.fr        #
+#    Updated: 2024/04/22 12:43:22 by fbelotti         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME =	FdF
+NAME =	pipex
 
 CC =	gcc
 RM =	rm -f
 
 CFLAGS = -Wall -Wextra -Werror -g
-CFLAGS += -I./libft -I
+CFLAGS += -I./libft
 LDFLAGS = -L./libft -lft
 
-SRCS =	./pipex.c \
+SRCS =	./handle_path.c ./handle_process.c ./pipex.c \
 
 OBJS =	$(SRCS:.c=.o)
 
@@ -29,12 +29,12 @@ announce:
 	@echo "Author: Florent Belotti"
 	@echo "Project: Pipex"
 
-$(NAME):	$(OBJS) libft
-	@$(CC) $(CFLAGS) $(OBJS) $(LDFLAGS) -lm -o $(NAME)
+$(NAME):	$(OBJS) ./libft
+	@$(CC) -v $(CFLAGS) $(OBJS) $(LDFLAGS) -o $(NAME)
 	@echo "Compilation of $(NAME) finished."
 
 libft:
-	@make -C ./libft
+	@make -C ./libft -j
 
 clean :
 	@$(RM) $(OBJS)
