@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   handle_path.c                                      :+:      :+:    :+:   */
+/*   bonus_handle_path.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 10:01:47 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/22 14:51:59 by fbelotti         ###   ########.fr       */
+/*   Created: 2024/04/26 10:23:06 by fbelotti          #+#    #+#             */
+/*   Updated: 2024/04/26 10:35:31 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
-void	get_and_exec_cmd(char *cmd, char **env)
+void	bonus_get_and_exec_cmd(char *cmd, char **env)
 {
 	char	**clean_cmd;
 	char	*path;
@@ -23,7 +23,7 @@ void	get_and_exec_cmd(char *cmd, char **env)
 		perror("ERROR : split failure\n");
 		exit(EXIT_FAILURE);
 	}
-	path = found_path(clean_cmd[0], env);
+	path = bonus_found_path(clean_cmd[0], env);
 	if (!path)
 	{
 		ft_free_array(clean_cmd);
@@ -39,7 +39,7 @@ void	get_and_exec_cmd(char *cmd, char **env)
 	}
 }
 
-char	*extract_path_from_env(char **env)
+char	*bonus_extract_path_from_env(char **env)
 {
 	int		i;
 	char	*prefix;
@@ -55,7 +55,7 @@ char	*extract_path_from_env(char **env)
 	return (perror("ERROR : can't found PATH in the environnement\n"), NULL);
 }
 
-char	*found_path(char *cmd, char **env)
+char	*bonus_found_path(char *cmd, char **env)
 {
 	char	*each_path;
 	char	*exec_path;
@@ -63,7 +63,7 @@ char	*found_path(char *cmd, char **env)
 	int		i;
 
 	i = 0;
-	paths = ft_split(extract_path_from_env(env), ':');
+	paths = ft_split(bonus_extract_path_from_env(env), ':');
 	if (!paths)
 	{
 		perror("ERROR : path extract failed\n");

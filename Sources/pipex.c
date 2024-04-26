@@ -6,11 +6,11 @@
 /*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/15 17:31:01 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/22 10:11:40 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:00:37 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 int	main(int ac, char **av, char **env)
 {

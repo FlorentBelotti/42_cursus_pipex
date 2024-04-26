@@ -6,11 +6,11 @@
 /*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:02:23 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/22 13:49:01 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/04/23 17:00:31 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "../pipex.h"
 
 void	run_child_process(int *pipe_fd, char **av, char **env)
 {
