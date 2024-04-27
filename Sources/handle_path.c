@@ -6,7 +6,7 @@
 /*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:01:47 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/23 17:00:33 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:19:40 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	get_and_exec_cmd(char *cmd, char **env)
 	if (!path)
 	{
 		ft_free_array(clean_cmd);
-		perror("ERROR : found path failure\n");
+		perror("ERROR : found_path failure\n");
 		exit(EXIT_FAILURE);
 	}
 	if (execve(path, clean_cmd, env) == -1)
@@ -80,6 +80,5 @@ char	*found_path(char *cmd, char **env)
 		i++;
 	}
 	ft_free_array(paths);
-	perror("ERROR : executable not found\n");
 	return (NULL);
 }

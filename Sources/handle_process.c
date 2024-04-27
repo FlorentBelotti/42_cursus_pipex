@@ -6,7 +6,7 @@
 /*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:02:23 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/23 17:00:31 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/04/27 16:29:45 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	run_child_process(int *pipe_fd, char **av, char **env)
 	close(fd_1);
 }
 
-void	run_parent_process(int *pipe_fd, char **av, char **env)
+void	run_parent_process(int *pipe_fd, char **av, char **env, int flag)
 {
 	int	fd_2;
 
