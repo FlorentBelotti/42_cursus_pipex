@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   bonus_handle_process.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
+/*   By: fbelotti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 10:24:19 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/26 17:09:03 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/06/20 00:54:50 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../pipex.h"
+#include "../Includes/pipex.h"
 
 void	run_child_process_b(int *pipe_fd, char *cmd, char **env)
 {

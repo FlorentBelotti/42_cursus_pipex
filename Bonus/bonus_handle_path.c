@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   bonus_handle_path.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
+/*   By: fbelotti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 10:23:06 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/26 10:35:31 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/06/20 00:54:46 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../pipex.h"
+#include "../Includes/pipex.h"
 
 void	bonus_get_and_exec_cmd(char *cmd, char **env)
 {

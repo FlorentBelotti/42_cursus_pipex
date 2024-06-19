@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   bonus_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
+/*   By: fbelotti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 10:39:25 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/26 17:04:20 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/06/20 00:54:55 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../pipex.h"
+#include "../Includes/pipex.h"
 
 void	manage_files(int input_file, int output_file)
 {
