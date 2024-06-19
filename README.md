@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<h1>Pipex - Unix Pipe Handling</h1>
+<h1>42_cursus_Pipex</h1>
 
 <p>Pipex is a project that explores the detailed programming of a Unix mechanism that you may already be familiar with. The objective is to handle pipes and redirect the input and output of commands, mimicking the behavior of shell pipelines.</p>
 
@@ -66,9 +66,5 @@ execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>, <code>un
     <li><code>bonus_handle_path.c</code>: Handles path resolution for bonus features.</li>
     <li><code>bonus_handle_here_doc.c</code>: Manages the "here_doc" functionality.</li>
 </ul>
-
-<h2 id="license">License</h2>
-<p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
-
 </body>
 </html>
