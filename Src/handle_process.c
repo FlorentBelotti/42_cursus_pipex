@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   handle_process.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
+/*   By: fbelotti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 10:02:23 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/27 16:29:45 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/06/20 00:24:15 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../pipex.h"
+#include "../Includes/pipex.h"
 
 void	run_child_process(int *pipe_fd, char **av, char **env)
 {
@@ -27,7 +27,7 @@ void	run_child_process(int *pipe_fd, char **av, char **env)
 	close(fd_1);
 }
 
-void	run_parent_process(int *pipe_fd, char **av, char **env, int flag)
+void	run_parent_process(int *pipe_fd, char **av, char **env)
 {
 	int	fd_2;
 

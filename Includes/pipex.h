@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbelotti <marvin@42perpignan.fr>           +#+  +:+       +#+        */
+/*   By: fbelotti <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 15:17:23 by fbelotti          #+#    #+#             */
-/*   Updated: 2024/04/26 17:07:27 by fbelotti         ###   ########.fr       */
+/*   Updated: 2024/06/20 00:23:48 by fbelotti         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,11 @@
 
 /* LIBFT INCLUDE */
 
-# include "./libft/libft.h"
+# include "./libft/Includes/libft.h"
+
+/* INCLUDE */
+
+# include <sys/wait.h>
 
 	/* MANDATORY_PART */
 
