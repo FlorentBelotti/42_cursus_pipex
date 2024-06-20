@@ -16,7 +16,6 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#code-overview">Code Overview</a></li>
-    <li><a href="#license">License</a></li>
 </ul>
 
 <h2 id="installation">Installation</h2>
@@ -66,5 +65,18 @@ execve</code>, <code>exit</code>, <code>fork</code>, <code>pipe</code>, <code>un
     <li><code>bonus_handle_path.c</code>: Handles path resolution for bonus features.</li>
     <li><code>bonus_handle_here_doc.c</code>: Manages the "here_doc" functionality.</li>
 </ul>
+    <h2>Feedback</h1>
+    <p>
+        The Pipex project is not a significant technical challenge. The real challenge lies in understanding the use and functioning of pipes in a shell and in a C program. It is often recommended to complete Pipex before tackling Minishell, as the latter also uses this concept. I would make the same suggestion.
+    </p>
+    <p>
+        Implementing Pipex and its bonuses is generally not very difficult. The most time-consuming part is understanding and mastering the use of processes in a C program. Once you grasp this logic, the rest of the project becomes relatively straightforward to implement.
+    </p>
+    <p>
+    <h2>Thanks</h1>
+        To <a href="https://github.com/JayZ66">Jeguerin (JayZ66)</a>: who greatly helped me understand the functionality and utility of pipes. Having already completed this project, she allowed me to build on hers and explained its workings so that I could develop my own.
+    </p>
+</body>
+</html>
 </body>
 </html>
