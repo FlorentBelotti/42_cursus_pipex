@@ -12,27 +12,12 @@
 
 <ul>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#features">Features</a></li>
     <li><a href="#code-overview">Code Overview</a></li>
     <li><a href="#feedback">Feedback</a></li>
     <li><a href="#thanks">Thanks</a></li>
 </ul>
 </nav>
-
-### Installation![---------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-<section id="installation">
-
-<p>To install and run the Pipex project, follow these steps:</p>
-<ol>
-    <li>Clone the repository:</li>
-    <pre><code>git clone https://github.com/yourusername/pipex.git</code></pre>
-    <li>Navigate to the project directory:</li>
-    <pre><code>cd pipex</code></pre>
-    <li>Compile the project using the provided Makefile:</li>
-    <pre><code>make</code></pre>
-</ol>
-</section>
 
 ### Usage![---------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <section id="usage">
